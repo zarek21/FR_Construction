@@ -1,34 +1,85 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer fonts {
+  /* work-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/src/assets/fonts/work-sans-v23-latin-regular.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* work-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/src/assets/fonts/work-sans-v23-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/src/assets/fonts/roboto-v48-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/src/assets/fonts/roboto-v48-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+@layer colors {
+  :root {
+    --c-primary: hsl(220, 41%, 49%);
+    --c-accent: hsl(34, 44%, 69%);
+    --c-background: hsl(30, 25%, 97%);
+    --c-surface: hsl(0, 0%, 100%);
+    --c-text-primary: hsl(225, 29%, 24%);
+    --c-text-secondary: hsl(200, 18%, 46%);
+    --c-border: hsl(0, 0%, 88%);
+  }
 }
 
-html {
-  font-size: 62.5%;
-}
+@layer global {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  font-family: sans-serif;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
+  html {
+    font-size: 62.5%;
+  }
 
-p {
-  line-height: 1.3;
-}
+  body {
+    font-family: sans-serif;
+  }
 
-a {
-  text-decoration: none;
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
