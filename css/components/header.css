@@ -19,4 +19,5 @@
 .hamburguer-btn {
   width: 3rem;
   height: auto;
+  stroke: var(--c-accent);
 }
