@@ -1,1 +1,11 @@
 /* HEADER COMPONENT */
+
+.header {
+  background-color: var(--c-background);
+  padding: 1.2rem;
+}
+
+.logo-header {
+  width: 96px;
+  height: 96px;
+}
