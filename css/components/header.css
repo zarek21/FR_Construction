@@ -5,7 +5,18 @@
   padding: 1.2rem;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo-header {
-  width: 96px;
-  height: 96px;
+  width: 5rem;
+  height: auto;
+}
+
+.hamburguer-btn {
+  width: 3rem;
+  height: auto;
 }
