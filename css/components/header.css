@@ -1,7 +1,6 @@
 /* HEADER COMPONENT */
 
 .header {
-  background-color: var(--c-background);
   padding: 1.2rem;
 }
 
@@ -9,15 +8,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--c-border);
 }
 
-.logo-header {
-  width: 5rem;
-  height: auto;
+.header img {
+  width: 9rem;
 }
 
-.hamburguer-btn {
-  width: 3rem;
-  height: auto;
-  stroke: var(--c-accent);
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
 }
