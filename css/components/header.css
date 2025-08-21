@@ -1,0 +1,128 @@
+/* HEADER COMPONENT */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--c-surface);
+  padding: var(--space-2) var(--space-4);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  z-index: 9999;
+}
+
+.header-logo {
+  height: 4rem;
+}
+
+.header-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.header-toggle:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+}
+
+.header-toggle-bar {
+  width: 2.5rem;
+  height: 3px;
+  background-color: var(--c-text-primary);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--c-surface);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.header-nav.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: var(--space-4);
+}
+
+.header-nav-link {
+  font-size: var(--fs-h3);
+  font-weight: var(--font-weight-bold);
+  color: var(--c-text-primary);
+  transition: color 0.2s;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--c-primary);
+}
+
+.header-nav-link--cta {
+  background-color: var(--c-primary);
+  color: var(--c-surface);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.header-nav-link--cta:hover,
+.header-nav-link--cta:focus {
+  background-color: var(--c-accent);
+  color: var(--c-text-primary);
+}
+
+/* --- Desktop Styles (min-width: 768px) --- */
+@media (min-width: 48em) {
+  /* 768px */
+  .header-toggle {
+    display: none; /* Hide hamburger on desktop */
+  }
+
+  .header-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+    visibility: visible;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    height: auto;
+    gap: var(--space-4);
+  }
+
+  .header-nav-link {
+    font-size: var(--fs-body); /* Smaller font for desktop nav */
+    font-weight: var(--font-weight-normal);
+  }
+
+  .header-nav-link--cta {
+    padding: var(--space-1) var(--space-3);
+  }
+}
