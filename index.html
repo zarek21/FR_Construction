@@ -16,61 +16,41 @@
     <link rel="stylesheet" href="css/components/header.css" />
 
     <!-- JS -->
-    <script src="js/main.js" defer></script>
+    <script src="js/burguer-menu.js" defer></script>
+    <script src="js/get-focusable-elements.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <a href="/"
-        ><img
-          class="header-logo"
-          src="/assets/img/logo/logo.png"
-          alt="Fr Constructions Homepage"
-      /></a>
-
-      <button
-        class="header-toggle"
-        aria-expanded="false"
-        aria-controls="main-navegation"
-        aria-label="Menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
-
-      <nav class="header-nav" id="main-navigation">
-        <ul class="header-nav-lsit">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">Home</a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">About</a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">Gallery</a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link header-nav-link--cta" href="#"
-              >Free Estimate</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="site-head" role="banner">
+      <a href="#main-content" class="skip-link">Skip to content</a>
+      <div class="wrapper">
+        <div class="site-head__inner">
+          <a href="/" aria-label="ACME home" class="site-head__brand">
+            <img src="assets/img/logo/logo.png" alt="Brand Logo" />
+          </a>
+          <burguer-menu max-width="600">
+            <nav class="navigation" aria-label="primary">
+              <ul role="list">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Our Work</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Your account</a>
+                </li>
+              </ul>
+            </nav>
+          </burguer-menu>
+        </div>
+      </div>
     </header>
 
     <main>
