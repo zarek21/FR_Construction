@@ -3,7 +3,6 @@
 .hero-section {
   display: grid;
   place-items: center;
-
   min-height: 90vh;
   padding: var(--spacing-xxl) var(--spacing-lg);
   background-color: var(--clr-primary);
