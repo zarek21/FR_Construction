@@ -23,6 +23,7 @@ picture {
   --clr-light: #f8f9fa; /* Un blanco roto para fondos */
   --clr-dark: #212529; /* Gris muy oscuro para el texto principal */
   --clr-neutral: #6c757d; /* Gris medio para subtítulos, texto secundario */
+  --clr-neutral-light: #adb5bd;
 
   /* FONT FAMILY */
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
