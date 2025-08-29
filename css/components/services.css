@@ -13,6 +13,7 @@
 .services-card__tag {
   color: var(--clr-accent);
   margin-bottom: var(--spacing-xxl);
+  text-align: center;
 }
 
 .services-card__heading {
