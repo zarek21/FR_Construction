@@ -1,8 +1,3 @@
-svg {
-  width: 48px;
-  color: var(--clr-accent);
-}
-
 .services-section {
   padding: var(--spacing-xxl) var(--spacing-lg);
   background-color: var(--clr-primary);
@@ -10,10 +5,28 @@ svg {
 
 .services-card__tag {
   color: var(--clr-accent);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.services-card__heading {
+  text-align: center;
+  color: var(--clr-neutral-light);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+}
+
+svg {
+  width: 32px;
+  color: var(--clr-accent);
+  margin-bottom: var(--spacing-sm);
 }
 
 .services-card__icon-container {
   display: flex;
   justify-content: center;
+}
+
+.services-card__description {
+  color: var(--clr-neutral-light);
+  text-align: center;
 }
