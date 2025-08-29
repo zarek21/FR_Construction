@@ -14,6 +14,8 @@
   color: var(--clr-accent);
   margin-bottom: var(--spacing-xxl);
   text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--clr-accent);
 }
 
 .services-card__heading {
