@@ -1,0 +1,19 @@
+svg {
+  width: 48px;
+  color: var(--clr-accent);
+}
+
+.services-section {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background-color: var(--clr-primary);
+}
+
+.services-card__tag {
+  color: var(--clr-accent);
+  margin-bottom: var(--spacing-xl);
+}
+
+.services-card__icon-container {
+  display: flex;
+  justify-content: center;
+}
