@@ -46,6 +46,9 @@ picture {
   --spacing-lg: 1.5rem; /* 24px */
   --spacing-xl: 2rem; /* 32px */
   --spacing-xxl: 4rem; /* 64px */
+
+  /* SOMBRRAS */
+  --shadow-base: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 body {

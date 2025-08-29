@@ -3,6 +3,13 @@
   background-color: var(--clr-primary);
 }
 
+.services-card {
+  box-shadow: var(--shadow-base);
+  border-radius: 8px;
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
 .services-card__tag {
   color: var(--clr-accent);
   margin-bottom: var(--spacing-xxl);
