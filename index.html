@@ -105,92 +105,107 @@
       <!-- SERVICES SECTION -->
       <section class="services-section">
         <div class="container">
-          <!-- SERVICE 1 -->
-          <h2 class="services-card__tag">Our Services</h2>
-          <article class="services-card">
-            <div class="services-card__icon-container">
-              <svg
-                class="services-card__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
-            </div>
-            <header class="services-card__header">
-              <h3 class="services-card__heading">Interior Remodeling</h3>
-            </header>
-            <p class="services-card__description">
-              From stunning kitchen makeovers to luxurious bathroom upgrades, we
-              bring your vision to life inside your home
-            </p>
+          <!-- El título de la sección va aquí, una sola vez -->
+          <h2 class="section-title services-section__title">
+            Our Core Services
+          </h2>
 
-            <!-- SERVICE 2 -->
-          </article>
-          <article class="services-card">
-            <div class="services-card__icon-container">
-              <svg
-                class="services-card__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
+          <!-- Este div actuará como el contenedor de la cuadrícula (grid) -->
+          <div class="services-grid">
+            <!-- SERVICE CARD 1 -->
+            <article class="service-card">
+              <div class="service-card__icon-container">
+                <!-- SVG para "Interiores". He encontrado uno más apropiado. -->
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
-            </div>
-            <header class="services-card__header">
-              <h3 class="services-card__heading">Exterior Remodeling</h3>
-            </header>
-            <p class="services-card__description">
-              From beautiful outdoor living spaces to durable exterior
-              renovations, we bring your vision to life outside your home.
-            </p>
-          </article>
+                >
+                  <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9" />
+                  <path d="M9 22V12h6v10" />
+                  <path d="m2 10.45 12-8 12 8" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Interior Remodeling</h3>
+              <p class="service-card__description">
+                From stunning kitchen makeovers to luxurious bathroom upgrades,
+                we bring your vision to life inside your home.
+              </p>
+            </article>
 
-          <!-- SERVICE 3 -->
-          <article class="services-card">
-            <div class="services-card__icon-container">
-              <svg
-                class="services-card__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
+            <!-- SERVICE CARD 2 -->
+            <article class="service-card">
+              <div class="service-card__icon-container">
+                <!-- SVG para "Exteriores" -->
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
-            </div>
-            <header class="services-card__header">
-              <h3 class="services-card__heading">Interior Remodeling</h3>
-            </header>
-            <p class="services-card__description">
-              From stunning kitchen makeovers to luxurious bathroom upgrades, we
-              bring your vision to life inside your home
-            </p>
-          </article>
+                >
+                  <path
+                    d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <path d="M12 18h1" />
+                  <path d="M12 15h.01" />
+                  <path d="M10 9v1a2 2 0 0 0 2 2h1" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Exterior Renovations</h3>
+              <p class="service-card__description">
+                Boost your curb appeal with new siding, durable fences, and
+                beautiful decks built to last.
+              </p>
+            </article>
+
+            <!-- SERVICE CARD 3 -->
+            <article class="service-card">
+              <div class="service-card__icon-container">
+                <!-- SVG para "Puertas y Ventanas" -->
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-6"
+                  />
+                  <rect x="12" y="2" width="8" height="6" rx="2" />
+                  <path d="M18 14v.01" />
+                  <path d="M18 10v.01" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Windows & Doors</h3>
+              <p class="service-card__description">
+                Upgrade your home's safety and energy efficiency with
+                professional installation of modern windows and doors.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
+      <!-- END OF SECTION -->
     </main>
   </body>
 </html>
