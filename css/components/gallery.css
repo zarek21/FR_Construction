@@ -4,15 +4,6 @@
   padding: var(--spacing-xxl) var(--spacing-lg);
 }
 
-.section-title {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--clr-primary);
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: var(--spacing-xl);
-}
-
 .project-card {
   background-color: #ffff;
   border-radius: 8px;
