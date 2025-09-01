@@ -1,0 +1,36 @@
+/* PROCESS SECTION */
+
+.process-section {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: var(--spacing-xxl);
+}
+
+.process-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-section__steps-number {
+  background-color: var(--clr-accent);
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.process-section__steps-heading {
+  text-align: center;
+}
+
+.process-section__steps-description {
+  text-align: center;
+}
