@@ -1,0 +1,15 @@
+/* FORM WITH CTA SECTION */
+
+.cta-section {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background-color: var(--clr-primary);
+}
+
+.cta-section__heading {
+  color: var(--clr-light);
+  text-transform: uppercase;
+}
+
+.cta-section__description {
+  color: var(--clr-neutral-light);
+}
