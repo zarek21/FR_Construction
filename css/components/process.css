@@ -1,36 +1,44 @@
-/* PROCESS SECTION */
-
 .process-section {
   padding: var(--spacing-xxl) var(--spacing-lg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  gap: var(--spacing-xxl);
 }
 
-.process-section__header {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+.process-list {
+  counter-reset: process-counter;
+  list-style: none;
+  padding-left: 0;
+
+  display: grid;
+  gap: var(--spacing-xl);
 }
 
-.process-section__steps-number {
+.process-item {
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+.process-item::before {
+  counter-increment: process-counter;
+  content: counter(process-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
   background-color: var(--clr-accent);
-  width: 40px;
-  height: 40px;
-  border-radius: 9999px;
-  text-align: center;
-  align-self: center;
-  justify-self: center;
+  color: var(--clr-primary);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-md);
+  display: grid;
+  place-items: center;
 }
 
-.process-section__steps-heading {
-  text-align: center;
+.process-item__title {
+  color: var(--clr-primary);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-sm);
 }
 
-.process-section__steps-description {
-  text-align: center;
+.process-item__description {
+  color: var(--clr-neutral);
 }
