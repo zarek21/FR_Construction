@@ -7,6 +7,11 @@
   background-color: var(--clr-primary);
 }
 
+.cta {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
 .cta-section__heading {
   color: var(--clr-light);
   text-transform: uppercase;
@@ -18,5 +23,7 @@
 
 .cta-section__form {
   padding-top: var(--spacing-xl);
-  color: var(--clr-light);
+  color: var(--clr-accent);
+  font-family: inherit;
+  display: grid;
 }
