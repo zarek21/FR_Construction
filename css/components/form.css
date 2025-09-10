@@ -33,4 +33,50 @@
 .form-label {
   color: var(--clr-light);
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: #0d3b66;
+  border: 1px solid #2a5a8a;
+  border-radius: 5px;
+  color: var(--clr-light);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--clr-neutral);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(252, 163, 17, 0.4);
+}
+
+.btn--form {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  text-align: center;
+}
+
+.btn--form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
