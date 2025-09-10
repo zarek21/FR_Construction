@@ -242,10 +242,10 @@
       <!-- END OF SECTION -->
 
       <!-- CTA SECTION -->
-      <section class="cta-section">
+      <section class="cta-section" id="contact">
         <div class="container">
-          <div class="cta">
-            <h2 class="section-title cta-section__heading">
+          <div class="cta-content">
+            <h2 class="section-title cta-section__title">
               Ready to Start Your Transformation?
             </h2>
             <p class="cta-section__description">
@@ -255,15 +255,16 @@
             </p>
 
             <!-- FORM -->
-            <form class="cta-section__form">
+            <form class="cta-form">
               <div>
                 <!-- FULL NAME LABEL -->
-                <label for="full-name">Full Name</label>
+                <label for="full-name" class="form-label">Full Name</label>
                 <input
                   id="full-name"
-                  type="text"
-                  placeholder="Mary Miller"
                   name="full-name"
+                  type="text"
+                  class="form-input"
+                  placeholder="e.g., John Doe"
                   required
                 />
               </div>
@@ -274,23 +275,45 @@
                 <input
                   id="email"
                   type="email"
-                  placeholder="mail@example.com"
                   name="email"
+                  placeholder="e.g., john.doe@example.com"
                   required
                 />
               </div>
-
               <div>
-                <!-- WHERE DID YOU HEAR FROM US? -->
-                <label for="full-name">Where Did You Hear From Us?</label>
-                <select name="select-where" id="select-where" required>
-                  <option value="">Please choose one option</option>
-                  <option value="">Friends and family</option>
-                  <option value="">Youtube videos</option>
-                  <option value="">Others</option>
-                </select>
+                <!-- PHONE NUMBER LABEL -->
+                <div class="form-group">
+                  <label for="phone" class="form-label"
+                    >Phone Number (Optional)</label
+                  >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    class="form-input"
+                    placeholder="e.g., (555) 123-4567"
+                  />
+                </div>
+
+                <!-- MESSAGE LABEL -->
+                <div class="form-group">
+                  <label for="project-details" class="form-label"
+                    >Tell us about your project</label
+                  >
+                  <textarea
+                    id="project-details"
+                    name="project-details"
+                    class="form-textarea"
+                    rows="4"
+                    placeholder="e.g., I'd like to remodel my kitchen..."
+                    required
+                  ></textarea>
+                </div>
+
                 <!-- CTA BUTTON -->
-                <button class="btn">Get Free Estimate Now</button>
+                <button type="submit" class="btn btn--form">
+                  Send My Free Estimate Request
+                </button>
               </div>
             </form>
             <!-- END OF FORM -->

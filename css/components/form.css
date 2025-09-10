@@ -1,15 +1,13 @@
 /* FORM WITH CTA SECTION */
 
 .cta-section {
-  padding-top: var(--spacing-xxl);
-  padding-left: var(--spacing-lg);
-  padding-right: var(--spacing-lg);
+  padding: var(--spacing-xxl) var(--spacing-lg);
   background-color: var(--clr-primary);
 }
 
-.cta {
-  display: grid;
-  gap: var(--spacing-md);
+.cta-section__title {
+  color: var(--clr-light);
+  text-align: center;
 }
 
 .cta-section__heading {
